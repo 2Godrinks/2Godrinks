@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2go Drinks - Gamificação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="2go Drinks Logo" class="logo">
+        <h1>2go Drinks</h1>
+        <nav>
+            <ul>
+                <li><a href="#raspadinha">Raspadinha</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="raspadinha">
+            <h2>Raspadinha</h2>
+            <div id="scratch-card">
+                <div id="scratch-area">
+                    <canvas id="scratchCanvas" width="300" height="100"></canvas>
+                </div>
+                <button onclick="resetScratchCard()">Tentar Novamente</button>
+            </div>
+            <div id="result" class="hidden">
+                <h3 id="resultMessage"></h3>
+            </div>
+        </section>
+        <section id="quiz">
+            <h2>Quiz</h2>
+            <div id="quiz-container">
+                <p id="quiz-question">Pergunta aparecerá aqui</p>
+                <button onclick="startQuiz()">Começar o Quiz</button>
+                <div id="quiz-options" class="hidden"></div>
+                <p id="quiz-result" class="hidden"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 2go Drinks. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
